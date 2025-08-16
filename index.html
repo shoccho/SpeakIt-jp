@@ -8,18 +8,7 @@
 </head>
 
 <body>
-    <button onclick="speak()">speak </button>
+    <!-- <button onclick="speak()">speak </button> -->
 </body>
-<script>
-    const speak = () => {
-        const synth = window.speechSynthesis;
-        const utterThis = new SpeechSynthesisUtterance("かぶき");
-        utterThis.lang = 'ja-JP';
-
-        utterThis.pitch = 1;
-        utterThis.rate = 1;
-        synth.speak(utterThis);
-    }
-</script>
 
 </html>
