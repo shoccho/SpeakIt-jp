@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="speak()">speak </button>
+</body>
+<script>
+    const speak = () => {
+        const synth = window.speechSynthesis;
+        const utterThis = new SpeechSynthesisUtterance("かぶき");
+        utterThis.lang = 'ja-JP';
+
+        utterThis.pitch = 1;
+        utterThis.rate = 1;
+        synth.speak(utterThis);
+    }
+</script>
+
+</html>
